@@ -49,7 +49,7 @@ def get_person(id):
         
     elif request.method == 'DELETE':
         person.delete()
-        return jsonify(message="Person deleted successfully!"), 200
+        return jsonify(message=f"Person with details {person.to_dict()} deleted successfully!"), 200
 
 
 @app.teardown_appcontext
