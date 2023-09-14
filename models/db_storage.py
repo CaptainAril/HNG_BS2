@@ -34,7 +34,7 @@ class DBStorage:
         self.__session = Session
     
     def new(self, obj):
-        """Creates new entry to session."""
+        """Adds new entry to session."""
         self.__session.add(obj)
 
     def save(self):
@@ -47,7 +47,7 @@ class DBStorage:
             self.__session.delete(obj)
 
     def get(self, *args, **kwargs):
-        """Retrieves object from database by id"""
+        """Retrieves object from database"""
         key, value = list(kwargs.items())[0]
         obj = self.__session.query(
             Person).filter(getattr(Person, key) == value).first()

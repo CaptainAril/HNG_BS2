@@ -40,4 +40,4 @@ In the root directory, create a `.env` file containing MySQL database credential
 `python3 -m api.v1.app`
 This starts a flask app at `http://127.0.0.1:8000/`.
 
-Refer to `DOCUMENTATION.md` for API endpoints and usage.
+Refer to [`DOCUMENTATION.md`](https://github.com/CaptainAril/HNG_BS2/blob/main/DOCUMENTATION.md) for API endpoints and usage.
